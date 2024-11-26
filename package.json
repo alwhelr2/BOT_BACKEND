@@ -1,0 +1,42 @@
+{
+  "name": "bot_backend",
+  "version": "1.0.0",
+  "description": "Discord bot server",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "del /s /q build",
+    "build": "tsc --build",
+    "start": "npm run clean && npm run build && node build/index.js",
+    "startNoClean": "npm run clean && node build/index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Adrian Wheeler",
+    "email": "awheeler121@gmail.com",
+    "url": "http://adrianwheeler.tech"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "discord.js": "^14.16.3",
+    "domutils": "^3.1.0",
+    "fast-average-color-node": "^3.0.0",
+    "glob": "^10.4.2",
+    "graphemer": "^1.4.0",
+    "htmlparser2": "^9.1.0",
+    "jimp": "^0.22.12",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "@types/htmlparser2": "^3.10.7",
+    "@types/node": "^20.14.9",
+    "@types/node-schedule": "^2.1.7",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [ "@typescript-eslint", "@stylistic/js" ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parserOptions": {
+        "project": [ "./tsconfig.json" ]
+    },
+    "rules": {
+        "@stylistic/js/indent": [ "warn", 4, {
+            "SwitchCase": 1
+        } ],
+        "@stylistic/js/spaced-comment": "warn",
+        "@stylistic/js/array-bracket-spacing": [ "warn", "always" ]
+    }
+}
